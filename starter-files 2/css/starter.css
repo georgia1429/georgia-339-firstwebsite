@@ -1,0 +1,283 @@
+/* Starter CSS */
+
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    margin: 0;
+    background-color: #eedbe5;
+    }
+   
+body {
+    margin:0;
+    }
+  body, html{
+    height:100%;
+  }
+.home-pic{
+  width:100%;
+  
+}
+    h1{
+      font-family: 'Lato', sans-serif;
+      text-align:center;
+        font-weight:400;
+        font-size:50px;
+        color:#3d2130;
+        padding:20px;
+        
+    }
+    h2{
+      font-family: 'Lato', sans-serif;
+        text-align:center;
+        font-size:20px;
+        padding:0 20px 20px 20px;
+        font-weight:100px;
+        color:#3d2130;
+
+    }
+ 
+    h3{
+      text-align: left;
+      background-color:#00240c;
+      padding: 5em;
+      color: #eedbe5;
+      font-size: 2em;
+    }
+    .flowergirl {
+    display:inline;
+    max-height:150px;
+    }
+    .home-pic{
+      padding-bottom: 5em;
+      padding-top: 5em;
+
+    }
+   ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+   }
+   
+    #main-nav-list{
+    padding: 50px 50px 25px;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    align-items:center;
+    width:100%;
+    }
+.item{
+  display: flex;
+  width: 100%;
+  align-content: flex-end;
+  align-items: baseline;
+  font-size: 20px;  
+  text-transform:uppercase;
+}
+a{
+    color:rgb(0,0,0);
+    text-decoration:none;
+    margin:10px;
+}
+a:hover{
+color:#3e4554;
+}
+    div.a {
+        flex:1;
+        justify-content: space-around;
+    }
+
+    @media only screen and (min-width: 33em) {
+        body {
+          background-color:#eedbe5;
+        }
+      
+        #main-nav-list {
+          flex-direction: row;
+          justify-content:space-around;
+          align-items: baseline;
+
+        }
+      }
+
+      @media only screen and (min-width: 60em) {
+        body {
+        }
+        #main-nav-list {
+          justify-content: space-around;
+          align-items: baseline;
+        }
+      }
+      
+
+    /*
+   food.html code below
+    */
+    .foodpic{
+        display: block;
+  max-width: 100%;
+    }
+    .foods {
+        display:flex; 
+        justify-content:center;
+        flex-wrap: wrap;
+      }
+      
+      .food {
+        background-color:#5c3148;
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+        margin: 10px;
+        min-width:250px;
+        max-width:350px;
+        border: 1px solid gray;
+        border-raidus: 0.5em;
+        box-shadow: 0 2px 5px rgba(0,0,0,0,1);
+        position: relative;
+        top: 0;
+      }
+      .food:hover {
+        transition: all 0.1s ease-in;
+        top: -2px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+      .foodpic {
+        flex:1;
+        max-height: 450px;
+        overflow: hidden;
+      }
+      
+      .cardarticle {
+        padding: 1em;
+        flex: 1;
+        max-height:100px;
+      }
+      
+      /* typography */
+      .foodH1 {
+        font-size: 3rem;
+        padding: 10px 10px 80px 10px;
+        color:white;
+        text-transform:uppercase;
+        font-weight: 100px;
+        letter-spacing: 2px;
+      }
+      .music{
+        padding:3em;
+        text-align:center;
+      
+      }
+      .artgallery{
+        margin:0 auto;
+        max-width: 50%;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns:2;
+        grid-template-rows:4;
+      }
+
+      .art-one{
+        grid-column:1;
+        grid-row:1;
+      }
+      .art-two{
+        grid-column:2;
+        grid-row:1;
+      }
+      .art-three{
+        grid-column:1;
+        grid-row:2;
+      }
+      .art-four{
+        grid-column:1;
+        grid-row:2;
+      }
+
+    /* adventures and movement html */
+
+      .columns h1 {
+        font-size: 2em;
+text-transform: uppercase;
+padding:1em;
+      }
+        
+        .columns {
+          margin: 0 auto;
+          padding:5em;
+          max-width: 50%;
+          min-height: 400px;
+          display: grid;
+          grid-gap: 2em;
+          grid-template-columns: 2;
+          grid-template-rows:4;
+        }
+        .image-one {
+          grid-column:1;
+          grid-row:1;
+        }
+        .image-two  {
+          grid-column:2;
+          grid-row:1;
+        }
+        .image-three  {
+          grid-column:3;
+          grid-row:1;
+        }
+        .image-four  {
+          grid-column:1;
+          grid-row:2/3;
+        }
+        .image-five  {
+          grid-column:2;
+          grid-row:2/3;
+        }
+        .image-six  {
+          grid-column:3;
+          grid-row:2;
+        }
+        .image-seven  {
+          grid-column:3;
+          grid-row:3;
+        }
+      }
+      
+      @media (min-width: 1200px) {
+        .columns {
+          background: red;
+          grid-template-columns: 3;
+        }
+        .image.one {
+          grid-column:1;
+          grid-row:1;
+        }
+        .image.two {
+          grid-column:2;
+          grid-row:1;
+        }
+        .image.three {
+          grid-column:3;
+          grid-row:1;
+        }
+      }
+   
+    /*
+   art
+    }
+    */
+    /* highlight the item and use Command + slash to comment something out. */
